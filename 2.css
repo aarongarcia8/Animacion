@@ -1,0 +1,58 @@
+body {
+    font-family: Arial,  sans-serif; /* Familia de fuentes */
+    font-size: 11px; /* El tamaño de la fuente principal en el tag <p></p> */
+    background-color:black; /* El color del fondo de la página web */
+    color: #333333; /* El color del texto*/ 
+}
+h1 {
+    color: #00a800; /* El color de la cabecera */
+    font-size: 24px; /* El tamaño de la fuente de la cabecera */
+    font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
+}
+h2 {
+    color:#00a800
+}
+
+@keyframes animacion {
+    0% {
+      color: blue;
+      font-size:xx-large;
+    }
+  
+    25% {
+      color: red;
+      font-size:x-large
+    }
+  
+    50% {
+      color:greenyellow;
+      font-size:large
+    }
+
+    75% {
+        color: red;
+        font-size:x-large
+      }
+
+    100% {
+        color: blue;
+        font-size:xx-large;
+      }
+}
+
+@keyframes animacion2 {
+    0% {
+        transform:scale(2)
+    }
+
+    50% {
+        transform:scale(50%)
+    }
+
+    100% {
+        transform:scale(2)
+    }
+}
+
+h1:hover { animation: animacion 4s infinite; }
+img:hover { animation: animacion2 2s infinite; }
